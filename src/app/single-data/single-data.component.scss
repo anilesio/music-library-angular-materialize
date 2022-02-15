@@ -1,0 +1,153 @@
+.left-style{
+    min-height: 100vh;
+}
+
+.left-style a {
+    box-shadow: none;
+    background: transparent;
+    background-color: transparent;
+    display: block;
+    text-align: left;
+    margin-top: 20pt;
+}
+
+.left-style i{
+    margin-right: 20pt;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    // text-align: center;
+  }
+
+  .music-player {
+    background-color: rgb(50, 50, 50);
+    // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.502) 100%), url('https://samplesongs.netlify.app/album-arts/death-bed.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 20px 50px -30px #000;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+  .music-player--banner {
+    background-size: cover;
+    // height: 150px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    position:relative;
+    z-index:1;
+  }
+  .music-player--main {
+    /* height: 100px; */
+  }
+  .music-player--progress {
+    position: relative;
+    overflow:auto;
+    padding: 5px;
+  
+  }
+  .progress--progress-bar {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    -webkit-appearance: none;
+    height: 3px;
+    z-index:2
+  }
+  .progress--progress-bar::-webkit-progress-bar {
+      height: 6px;
+      background: transparent;
+   }
+  .progress--progress-bar::-webkit-progress-value {
+    background: #ed547a;
+   }
+  
+  .progress--time {
+    color: #A9A9A9;
+    font-size: 13pt;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .progress--time__end {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  
+  .music-player--controls {
+    padding: 0px 20px 5px;
+  }
+  .controls--play-button {
+    display:inline-block;
+    border-radius: 50%;
+    padding: 20px 22px;
+    background: rgba(68, 68, 68, 0.8);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .controls--play-button:hover {
+    background: gray;
+  }
+  .song-info {
+    display:inline-block;
+    position:relative;
+    top:5px;
+    margin-left:5px
+  }
+  .song-info--title {
+    font-size: 20px;
+    color: #8E8E8E;
+  }
+  .song-info--artist {
+    font-size: 12px;
+    color: #D8D8D8;
+  }
+  
+  .controls--actions {
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    float:right;
+  }
+  .controls--actions i {
+      font-size: 20px;
+      color: #BCBECA;
+      cursor: pointer;
+  }
+  .controls--actions .actions--repeat {
+    position:relative;
+    top: 2px;
+  }
+  .controls--actions .actions--repeat:hover {
+    color: #444
+  }
+
+  .controls--actions .fa-backward, .controls--actions .fa-forward, .fa-retweet {
+    border-radius: 50%;
+    background: rgba(188, 188, 188, 0.2);
+    border: 1px solid #3c3c3c;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px 9px 10px 12px;
+  }
+  
+  .controls--actions .fa-backward:hover, .controls--actions .fa-forward:hover {
+    background: #444;
+    color: #808080;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .controls--actions .fa-backward {
+    padding: 10px 9px 10px 12px;
+    
+  }
+  

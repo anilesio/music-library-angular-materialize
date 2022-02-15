@@ -1,0 +1,124 @@
+<section class="">
+    <div class="navbar-fixed">
+        <nav class="z-depth-0">
+            <div class="grey darken-3 nav-wrapper">
+                <ul class="left">
+                    <li class="">
+                        <div class="chip grey darken-2 grey-text z-depth-0 ml-2">
+                            <img src="assets/user.png" alt=""> Mário Jorge
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- full content -->
+    <section class="fullBody">
+        <!-- navbar -->
+        <div class="row">
+            <!-- lado direito -->
+            <div class="col s12 m12 l2 left-style grey darken-4">
+                <div class="row mt-2">
+                    <div class="col s12">
+                        <a href="" class="btn"><i class="material-icons">home</i> Home</a>
+                        <a href="" class="btn"><i class="material-icons">search</i> Pesquisar</a>
+                        <a href="" class="btn"><i class="material-icons">library_music</i> Biblioteca</a>
+                        <a href="" class="btn"><i class="material-icons">settings_input_antenna</i> Rádio</a>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col s12">
+                        <h6 class="ml-4 grey-text">Lista de reprodução</h6>
+                        <a href="" class="btn"><i class="material-icons">add</i> Criar lista de reprodução</a>
+                        <a href="" class="btn"><i class="small-box grey darken-3 material-icons">keyboard_arrow_right</i>
+                            Rádio</a>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col s12">
+                        <hr>
+                        <a href="" class="btn grey-text">RapCaviar</a>
+                        <a href="" class="btn grey-text">Music mix #1</a>
+                        <a href="" class="btn grey-text">Music mix #2</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fim lado direito -->
+
+            <!-- lado esquerdo -->
+            <div class="col s12 m12 l10">
+
+                <section class="">
+                    <div class="row">
+                        <div class="col s12 m12 mt-5">
+                            <a href="" class="btn mr-4 z-depth-0 grey darken-3 border-radius-1">Playlists</a>
+                            <a href="" class="btn mr-4 z-depth-0 grey darken-4 border-radius-1">Podcasts</a>
+                            <a href="" class="btn mr-4 z-depth-0 grey darken-4 border-radius-1">Artistas</a>
+                            <a href="" class="btn mr-4 z-depth-0 grey darken-4 border-radius-1">Albuns</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <h5 class="negrito grey-text text-lighten-2">Playlists</h5>
+                        </div>
+                    </div>
+
+                    <section class="scroll-y no-scroll-x barra-rolagem">
+                        <div class="row pr-3">
+                            <div class="col s12 m4 l2 mt-5" *ngFor="let item of songs" style="position: relative;">
+                                <div class="card z-depth-0" style="position: relative;">
+                                    <div class="card-image">
+                                        <img src="{{item?.artwork}}"
+                                            style="filter: brightness(90%); height: 200px; object-fit: cover;">
+                                        <span class="ml-1 espaco-p-1 blue left" style="position: absolute; top:10px; left: 0px; border-radius: 10px;"><i class="material-icons">audiotrack</i> </span>
+                                    </div>
+                                    <div class="espaco-p-1 mt-2 grey darken-4 p-3">
+                                        <a [routerLink]="['/item', item.id]" class="text-2 grey-text text-lighten-2 negrito">{{item.title}} </a>
+                                        <p class="text-1 grey-text">{{item.artist}} </p>
+                                        <p class="grey-text text-darken-2 linha-top-30">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipisicing... </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <!-- fim lado esquerdo -->
+        <!-- fim navbar -->
+
+        <!-- <section class="footer">
+            <section class="music-player">
+                <header class="music-player--banner"></header>
+                <main class="music-player--main">
+                    <div class="music-player--progress">
+                        <progress class="progress--progress-bar" value="43" max="100"></progress>
+                    </div>
+                    <div class="music-player--controls">
+                        <i class="material-icons controls--play-button">pause</i>
+
+                        <div class="song-info">
+                            <div class="song-info--title">Is This Love</div>
+                            <div class="song-info--artist">Bob Marley</div>
+                        </div>
+                        <div class="controls--actions">
+                            <i class="material-icons fa fa-backward actions--repeat">transform</i>
+                            <i class="material-icons fa fa-backward actions--repeat">sync</i>
+                            <i class="material-icons fa fa-backward actions--back">arrow_back</i>
+                            <i class="material-icons fa fa-forward actions--forward">arrow_forward</i>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </section> -->
+    </section>
+    <!-- fim full content -->
+
+</section>
